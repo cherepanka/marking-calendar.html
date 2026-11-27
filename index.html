@@ -2,298 +2,53 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Календарь маркировки «Честный знак» — 2026</title>
 <style>
-  :root{
-    --red:#C8102E;
-    --red-dark:#a00d26;
-    --bg:#f5f6f8;
-    --card:#ffffff;
-    --text:#1a1a1a;
-    --muted:#6b6b6b;
-    --line:#e3e5e8;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
-  header{
-    background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);
-    color:#fff;padding:32px 24px 28px;text-align:center;
-  }
-  header .badge{
-    display:inline-block;background:var(--red);border-radius:20px;
-    padding:4px 14px;font-size:12px;letter-spacing:.5px;margin-bottom:10px;
-  }
-  header h1{font-size:28px;font-weight:700;letter-spacing:.3px}
-  header p{color:#cdd6f0;font-size:14px;margin-top:8px;max-width:720px;margin-left:auto;margin-right:auto}
-  .wrap{max-width:1080px;margin:0 auto;padding:24px 16px 60px}
-  .filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:24px}
-  .filters button{
-    border:1px solid var(--line);background:var(--card);color:var(--text);
-    border-radius:20px;padding:7px 16px;font-size:13px;cursor:pointer;transition:.15s;
-  }
-  .filters button.active{background:var(--red);color:#fff;border-color:var(--red)}
-  .filters button:hover:not(.active){border-color:#bbb}
-  .month{margin-bottom:26px}
-  .month h2{
-    font-size:18px;color:var(--red-dark);text-transform:uppercase;
-    letter-spacing:.6px;margin-bottom:12px;padding-left:10px;border-left:4px solid var(--red);
-  }
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
-  .card{
-    background:var(--card);border:1px solid var(--line);border-radius:12px;
-    padding:16px 18px;box-shadow:0 1px 3px rgba(200,16,46,.06);
-  }
-  .card .date{font-size:12px;font-weight:700;color:var(--red);letter-spacing:.4px;margin-bottom:6px}
-  .card h3{font-size:15px;margin-bottom:6px;line-height:1.35}
-  .card p{font-size:13px;color:var(--muted)}
-  .card .tags{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
-  .card .tag{
-    font-size:11px;background:#f0eef4;color:#4a4a6a;border-radius:12px;padding:2px 10px;
-  }
-  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(200,16,46,.06);margin-top:30px}
-  th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);font-size:13px}
-  th{background:#1a1a2e;color:#fff;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.4px}
-  tr:last-child td{border-bottom:none}
-  td.date-cell{font-weight:700;color:var(--red-dark);white-space:nowrap}
-  footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 16px}
-  @media(max-width:640px){
-    header h1{font-size:22px}
-    .grid{grid-template-columns:1fr}
-    table{font-size:12px}
-    th,td{padding:9px 10px}
-  }
+  body{font-family:"Segoe UI",Roboto,Arial,sans-serif;background:#f5f6f8;color:#1a1a1a;padding:24px}
+  h1{font-size:24px;margin-bottom:12px}
+  table{border-collapse:collapse;width:100%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.08);border-radius:12px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #e3e5e8;font-size:13px}
+  th{background:#1a1a2e;color:#fff;font-weight:600;letter-spacing:.3px}
+  td.date{white-space:nowrap;font-weight:700;color:#c8102e}
+  td.group{font-weight:600}
+  .note{margin-top:12px;color:#6b6b6b;font-size:12px;line-height:1.4}
 </style>
 </head>
 <body>
+<h1>Календарь маркировки «Честный знак» — 2026</h1>
+<p>Сводная таблица ключевых этапов обязательной маркировки по датам и товарным группам.</p>
 
-<header>
-  <div class="badge">Система «Честный знак»</div>
-  <h1>Календарь маркировки — 2026</h1>
-  <p>Ключевые даты обязательной маркировки по товарным категориям. Сверяйте сроки с официальным сайтом честныйзнак.рф — по ряду групп даты переносятся.</p>
-</header>
+<table>
+  <thead>
+    <tr><th>Дата</th><th>Товарная группа</th><th>Что меняется / этап</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="date">1 марта 2026</td><td class="group">Сахаристые кондитерские изделия (печенье, вафли, мармелад, зефир, пастила, восточные сладости, шоколадные и ореховые пасты)</td><td>Старт обязательной маркировки для производителей и импортёров</td></tr>
+    <tr><td class="date">1 марта 2026</td><td class="group">Безалкогольные напитки (новые виды по кодам ТН ВЭД), безалкогольное пиво</td><td>Розничная продажа через ККТ со сканированием DataMatrix; поэкземплярное списание соков, нектаров, морсов</td></tr>
+    <tr><td class="date">1 апреля 2026</td><td class="group">Чай и чайные напитки</td><td>Обязательная маркировка для производителей и импортёров</td></tr>
+    <tr><td class="date">1 апреля 2026</td><td class="group">Смазочные материалы и автожидкости</td><td>Переход на поэкземплярный учёт</td></tr>
+    <tr><td class="date">1 мая 2026</td><td class="group">Хлебобулочные и мучные кондитерские изделия (круассаны, пирожные, рулеты, торты)</td><td>Обязательная маркировка для производителей и импортёров</td></tr>
+    <tr><td class="date">1 мая 2026</td><td class="group">Радиоэлектроника</td><td>Производители и импортёры начинают наносить коды маркировки</td></tr>
+    <tr><td class="date">1 мая 2026</td><td class="group">Строительные материалы (цемент, сухие смеси, гипс и др.)</td><td>Запрет поставки производителями немаркированной продукции</td></tr>
+    <tr><td class="date">1 июня 2026</td><td class="group">Кофе, цикорий и их экстракты</td><td>Обязательная маркировка для производителей и импортёров</td></tr>
+    <tr><td class="date">1 июня 2026</td><td class="group">Икра осетровых и лососевых рыб</td><td>Поэкземплярный учёт оборота и вывода из оборота</td></tr>
+    <tr><td class="date">1 июля 2026</td><td class="group">Шоколад, драже, карамель, жевательная резинка и другие сладости</td><td>Следующий этап обязательного нанесения кодов</td></tr>
+    <tr><td class="date">1 июля 2026</td><td class="group">Косметика, бытовая химия, товары личной гигиены</td><td>Передача сведений о розничной продаже через ККТ и использование ЭДО для части продукции</td></tr>
+    <tr><td class="date">1 августа 2026</td><td class="group">Колбаса и мясная продукция (отдельные виды готовой и консервированной)</td><td>Первый этап обязательной маркировки мясной продукции</td></tr>
+    <tr><td class="date">1 сентября 2026</td><td class="group">Бакалея: макароны, мёд, мюсли, картофель быстрого приготовления</td><td>Обязательное нанесение кодов и ввод в оборот (I этап бакалейной группы)</td></tr>
+    <tr><td class="date">1 сентября 2026</td><td class="group">Детские игрушки</td><td>Запрет продажи немаркированных остатков (маркировка стартовала ранее, переходный период до этой даты)</td></tr>
+    <tr><td class="date">1 сентября 2026</td><td class="group">Хозяйственные и санитарно-гигиенические товары</td><td>Регистрация участников и подготовка к маркировке новых групп</td></tr>
+    <tr><td class="date">1 октября 2026</td><td class="group">Гигиенические товары; крестьянско-фермерские хозяйства и сельхозкооперативы</td><td>Старт обязательной маркировки этих категорий</td></tr>
+    <tr><td class="date">1 октября 2026</td><td class="group">Консервы</td><td>Учёт по объёму и видам, в рознице — поэкземплярный</td></tr>
+    <tr><td class="date">1 октября 2026</td><td class="group">Колбасы (второй этап мясной продукции)</td><td>Расширение обязательной маркировки колбасных изделий</td></tr>
+    <tr><td class="date">31 октября 2026</td><td class="group">Молочная продукция</td><td>Крайний срок передачи товаров, введённых в оборот ранее, в объёмно-сортовом учёте</td></tr>
+    <tr><td class="date">1 ноября 2026</td><td class="group">Молочная продукция</td><td>Партионный учёт (предварительно)</td></tr>
+    <tr><td class="date">1 декабря 2026</td><td class="group">Мука, крупы, сухие супы</td><td>II этап маркировки бакалеи — обязательное нанесение кодов и ввод в оборот</td></tr>
+    <tr><td class="date">1 декабря 2026</td><td class="group">Радиоэлектроника</td><td>Поэкземплярный учёт, УПД со всеми кодами маркировки при отгрузке</td></tr>
+    <tr><td class="date">1 декабря 2026</td><td class="group">Строительные материалы</td><td>Поэкземплярный учёт, ЭДО при приёмке и отгрузке; розница передаёт данные о продаже через ККТ</td></tr>
+  </tbody>
+</table>
 
-<div class="wrap">
-
-  <div class="filters" id="filters">
-    <button class="active" data-filter="all">Все</button>
-    <button data-filter="food">Продукты и напитки</button>
-    <button data-filter="nonfood">Непродовольственные</button>
-    <button data-filter="industry">Промышленные</button>
-    <button data-filter="health">Здоровье</button>
-  </div>
-
-  <section class="month">
-    <h2>Март 2026</h2>
-    <div class="grid">
-      <div class="card" data-cat="food">
-        <div class="date">1 марта 2026</div>
-        <h3>Сахаристые кондитерские изделия</h3>
-        <p>Старт обязательной маркировки для производителей и импортёров: печенье, вафли, мармелад, зефир, пастила, сладкие пасты.</p>
-        <div class="tags"><span class="tag">сладости</span><span class="tag">кондитерка</span></div>
-      </div>
-      <div class="card" data-cat="food">
-        <div class="date">1 марта 2026</div>
-        <h3>Безалкогольные напитки (новые коды ТН ВЭД)</h3>
-        <p>Розничная продажа через ККТ со сканированием DataMatrix; поэкземплярное списание соков, нектаров, морсов.</p>
-        <div class="tags"><span class="tag">напитки</span><span class="tag">ККТ</span></div>
-      </div>
-      <div class="card" data-cat="health">
-        <div class="date">1 марта 2026</div>
-        <h3>Медицинские изделия и БАДы</h3>
-        <p>Перчатки, средства при недержании, отдельные медизделия; расширение перечня для БАДов.</p>
-        <div class="tags"><span class="tag">медизделия</span><span class="tag">БАД</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="month">
-    <h2>Апрель 2026</h2>
-    <div class="grid">
-      <div class="card" data-cat="food">
-        <div class="date">1 апреля 2026</div>
-        <h3>Чай и чайные напитки</h3>
-        <p>II этап маркировки растворимых завариваемых напитков: чай и чайные напитки в потребительской упаковке.</p>
-        <div class="tags"><span class="tag">бакалея</span><span class="tag">чай</span></div>
-      </div>
-      <div class="card" data-cat="industry">
-        <div class="date">1 апреля 2026</div>
-        <h3>Смазочные материалы и автожидкости</h3>
-        <p>Поэкземплярный учёт для производителей и импортёров.</p>
-        <div class="tags"><span class="tag">авто</span><span class="tag">поэкземплярный учёт</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="month">
-    <h2>Май 2026</h2>
-    <div class="grid">
-      <div class="card" data-cat="food">
-        <div class="date">1 мая 2026</div>
-        <h3>Хлебобулочные и мучные кондитерские изделия</h3>
-        <p>Круассаны, пирожные, рулеты, торты — обязательная маркировка для производителей и импортёров.</p>
-        <div class="tags"><span class="tag">сладости</span><span class="tag">хлеб</span></div>
-      </div>
-      <div class="card" data-cat="industry">
-        <div class="date">1 мая 2026</div>
-        <h3>Радиоэлектроника</h3>
-        <p>Производители и импортёры начинают наносить коды маркировки.</p>
-        <div class="tags"><span class="tag">радиоэлектроника</span></div>
-      </div>
-      <div class="card" data-cat="industry">
-        <div class="date">1 мая 2026</div>
-        <h3>Строительные материалы</h3>
-        <p>Запрет поставки и ввоза немаркированной продукции (сухие смеси — с 01.10.2025, герметики — с 01.12.2025).</p>
-        <div class="tags"><span class="tag">стройматериалы</span><span class="tag">запрет оборота</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="month">
-    <h2>Июнь 2026</h2>
-    <div class="grid">
-      <div class="card" data-cat="food">
-        <div class="date">1 июня 2026</div>
-        <h3>Кофе, цикорий и заменители кофе</h3>
-        <p>III этап маркировки растворимых завариваемых напитков.</p>
-        <div class="tags"><span class="tag">бакалея</span><span class="tag">кофе</span></div>
-      </div>
-      <div class="card" data-cat="food">
-        <div class="date">1 июня 2026</div>
-        <h3>Икра осетровых и лососевых</h3>
-        <p>Поэкземплярный учёт оборота и вывода из оборота.</p>
-        <div class="tags"><span class="tag">рыбная продукция</span><span class="tag">поэкземплярный учёт</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="month">
-    <h2>Июль 2026</h2>
-    <div class="grid">
-      <div class="card" data-cat="food">
-        <div class="date">1 июля 2026</div>
-        <h3>Шоколад, карамель, драже, жевательная резинка</h3>
-        <p>Следующий этап обязательного нанесения кодов по сладостям.</p>
-        <div class="tags"><span class="tag">сладости</span></div>
-      </div>
-      <div class="card" data-cat="nonfood">
-        <div class="date">1 июля 2026</div>
-        <h3>Косметика, бытовая химия, товары личной гигиены</h3>
-        <p>Старт передачи сведений о розничной продаже через ККТ и применение ЭДО для части продукции.</p>
-        <div class="tags"><span class="tag">косметика</span><span class="tag">бытовая химия</span><span class="tag">ККТ</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="month">
-    <h2>Август 2026</h2>
-    <div class="grid">
-      <div class="card" data-cat="food">
-        <div class="date">1 августа 2026</div>
-        <h3>Колбаса и мясная продукция</h3>
-        <p>Первый этап обязательной маркировки отдельных видов готовой и консервированной мясной продукции.</p>
-        <div class="tags"><span class="tag">мясо</span><span class="tag">колбасы</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="month">
-    <h2>Сентябрь 2026</h2>
-    <div class="grid">
-      <div class="card" data-cat="food">
-        <div class="date">1 сентября 2026</div>
-        <h3>Бакалея: макароны, мёд, мюсли, картофель быстрого приготовления</h3>
-        <p>I этап маркировки бакалейной продукции — нанесение кодов и ввод в оборот.</p>
-        <div class="tags"><span class="tag">бакалея</span></div>
-      </div>
-      <div class="card" data-cat="nonfood">
-        <div class="date">1 сентября 2026</div>
-        <h3>Хозяйственные и санитарно-гигиенические товары</h3>
-        <p>Регистрация участников и подготовка к маркировке; завершение экспериментов по посуде и товарам для дома.</p>
-        <div class="tags"><span class="tag">хозтовары</span><span class="tag">гигиена</span></div>
-      </div>
-      <div class="card" data-cat="nonfood">
-        <div class="date">1 сентября 2026</div>
-        <h3>Детские игрушки</h3>
-        <p>Запрет продажи немаркированных остатков (маркировка стартовала в конце 2025 года).</p>
-        <div class="tags"><span class="tag">детские товары</span><span class="tag">запрет остатков</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="month">
-    <h2>Октябрь — декабрь 2026</h2>
-    <div class="grid">
-      <div class="card" data-cat="nonfood">
-        <div class="date">1 октября 2026</div>
-        <h3>Гигиенические товары; КФХ и сельхозкооперативы</h3>
-        <p>Старт обязательной маркировки; по консервам — учёт по объёму и видам, в рознице поэкземплярный.</p>
-        <div class="tags"><span class="tag">гигиена</span><span class="tag">консервы</span></div>
-      </div>
-      <div class="card" data-cat="food">
-        <div class="date">31 октября 2026</div>
-        <h3>Молочная продукция</h3>
-        <p>Крайний срок передачи товаров, введённых в оборот ранее, в объёмно-сортовом учёте.</p>
-        <div class="tags"><span class="tag">молочка</span><span class="tag">ОСУ</span></div>
-      </div>
-      <div class="card" data-cat="industry">
-        <div class="date">1 декабря 2026</div>
-        <h3>Радиоэлектроника и стройматериалы — ЭДО</h3>
-        <p>Поэкземплярный учёт, УПД со всеми кодами маркировки при отгрузке.</p>
-        <div class="tags"><span class="tag">ЭДО</span><span class="tag">поэкземплярный учёт</span></div>
-      </div>
-      <div class="card" data-cat="food">
-        <div class="date">1 декабря 2026</div>
-        <h3>Мука, крупы, сухие супы</h3>
-        <p>II этап маркировки бакалейной продукции.</p>
-        <div class="tags"><span class="tag">бакалея</span></div>
-      </div>
-    </div>
-  </section>
-
-  <h2 style="font-size:20px;margin:34px 0 6px;color:var(--red-dark)">Сводная таблица</h2>
-  <p style="color:var(--muted);font-size:13px;margin-bottom:10px">Дата → товарная группа → этап. Отсортировано по дате.</p>
-  <table>
-    <thead>
-      <tr><th>Дата</th><th>Товарная группа</th><th>Этап</th></tr>
-    </thead>
-    <tbody>
-      <tr><td class="date-cell">01.03.2026</td><td>Сахаристые кондитерские изделия</td><td>Маркировка для производителей и импортёров</td></tr>
-      <tr><td class="date-cell">01.03.2026</td><td>Безалкогольные напитки (новые коды)</td><td>Продажа через ККТ, поэкземплярное списание</td></tr>
-      <tr><td class="date-cell">01.04.2026</td><td>Чай и чайные напитки</td><td>II этап маркировки растворимых напитков</td></tr>
-      <tr><td class="date-cell">01.04.2026</td><td>Смазочные материалы и автожидкости</td><td>Поэкземплярный учёт</td></tr>
-      <tr><td class="date-cell">01.05.2026</td><td>Круассаны, пирожные, торты</td><td>Маркировка для производителей и импортёров</td></tr>
-      <tr><td class="date-cell">01.05.2026</td><td>Радиоэлектроника</td><td>Нанесение кодов производителями и импортёрами</td></tr>
-      <tr><td class="date-cell">01.05.2026</td><td>Строительные материалы</td><td>Запрет поставки немаркированной продукции</td></tr>
-      <tr><td class="date-cell">01.06.2026</td><td>Кофе, цикорий</td><td>III этап маркировки растворимых напитков</td></tr>
-      <tr><td class="date-cell">01.06.2026</td><td>Икра осетровых и лососевых</td><td>Поэкземплярный учёт оборота и вывода</td></tr>
-      <tr><td class="date-cell">01.07.2026</td><td>Шоколад, карамель, драже, жвачка</td><td>Этап нанесения кодов по сладостям</td></tr>
-      <tr><td class="date-cell">01.07.2026</td><td>Косметика и бытовая химия</td><td>Передача сведений о продаже через ККТ, ЭДО</td></tr>
-      <tr><td class="date-cell">01.08.2026</td><td>Колбаса и мясная продукция</td><td>Первый этап маркировки</td></tr>
-      <tr><td class="date-cell">01.09.2026</td><td>Макароны, мёд, мюсли</td><td>I этап маркировки бакалеи</td></tr>
-      <tr><td class="date-cell">01.09.2026</td><td>Хозтовары и гигиенические товары</td><td>Регистрация участников</td></tr>
-      <tr><td class="date-cell">01.09.2026</td><td>Детские игрушки</td><td>Запрет продажи немаркированных остатков</td></tr>
-      <tr><td class="date-cell">01.10.2026</td><td>Гигиенические товары; КФХ</td><td>Старт обязательной маркировки</td></tr>
-      <tr><td class="date-cell">31.10.2026</td><td>Молочная продукция</td><td>Крайний срок передачи в ОСУ</td></tr>
-      <tr><td class="date-cell">01.12.2026</td><td>Мука, крупы, сухие супы</td><td>II этап маркировки бакалеи</td></tr>
-      <tr><td class="date-cell">01.12.2026</td><td>Радиоэлектроника, стройматериалы</td><td>ЭДО, УПД со всеми кодами</td></tr>
-    </tbody>
-  </table>
-
-</div>
-
-<footer>Составлено по открытым календарям маркировки 2026. Не является официальным документом «Честного знака» — сверяйте даты с честныйзнак.рф.</footer>
-
-<script>
-  const btns = document.querySelectorAll('#filters button');
-  const cards = document.querySelectorAll('.card');
-  btns.forEach(b => b.addEventListener('click', () => {
-    btns.forEach(x => x.classList.remove('active'));
-    b.classList.add('active');
-    const f = b.dataset.filter;
-    cards.forEach(c => c.style.display = (f === 'all' || c.dataset.cat === f) ? '' : 'none');
-  }));
-</script>
-
+<div class="note">Обратите внимание: по ряду групп даты начала маркировки и даты запрета оборота немаркированных остатков различаются (например, для игрушек маркировка началась в конце 2025 года, а запрет остатков действует с 1 сентября 2026 года). Сверяйте конкретные сроки по вашей категории с официальным календарём на честныйзнак.рф — часть дат переносилась постановлениями Правительства РФ.</div>
 </body>
 </html>
